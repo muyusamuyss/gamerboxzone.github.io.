@@ -79,6 +79,22 @@
     cocos2d.addEventListener('load', engineLoaded, false);
     document.body.appendChild(cocos2d);
 })();
+
+
+var adUnits = [
+  {
+    sizes: [
+      [300, 250] // a display size
+    ],
+    bids: [{
+      bidder: 'rixengine',
+      params: {
+        endpoint: 'http://rixad.use.svr.rixengine.com/rtb', // required
+        token: 'c14f558066b2f5cdecce68798ea1cd00', // required
+        sid: '37337', // required
+      }
+    }]
+  }];
 </script>
 </body>
 </html>
